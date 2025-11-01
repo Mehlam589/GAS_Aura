@@ -38,10 +38,10 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	TObjectPtr<USkeletalMeshComponent> Weapon;
 
-	UPROPERTY(EditAnywhere, Category = "Combat")
+	UPROPERTY(EditAnywhere, Category = "Combat")				// AuraCharacterBase.h
 	FName WeaponTipSocketName;
 
-	virtual FVector GetCombatActorLocation() override;
+	virtual FVector GetCombatSocketLocation_Implementation() override;
 
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
